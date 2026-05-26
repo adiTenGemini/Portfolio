@@ -284,6 +284,12 @@ button,
   grid-auto-rows: auto;
 }
 
+/* Add horizontal padding to the projects section so it doesn't run edge-to-edge */
+.projects {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .project-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -415,9 +421,12 @@ body.light {
 
 @media (max-width: 960px) {
   .hero-grid,
-  .about-grid,
-  .projects .project-grid {
+  .about-grid {
     grid-template-columns: 1fr;
+  }
+  /* Tablet: use 2 columns for projects before collapsing to 1 on small screens */
+  .projects .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .feature-row {
