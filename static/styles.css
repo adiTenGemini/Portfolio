@@ -279,7 +279,9 @@ button,
 .projects .project-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /* Desktop: 3 columns by (up to) 2 rows for six projects */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: auto;
 }
 
 .project-card {
