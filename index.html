@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">MyPortfolio</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Digital Creator & Developer</span>
+          <h1>Build thoughtful products with clean design and reliable code.</h1>
+          <p>Welcome to my portfolio. I design interfaces, build data tools, and ship polished web experiences that feel modern and simple.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-cards">
+          <article class="feature-card feature-card-large">
+            <p class="feature-label">Featured Work</p>
+            <h2>Web Design & Development</h2>
+            <p>Simple, modern UI with responsive layouts and clean interactions.</p>
+          </article>
+
+          <div class="feature-row">
+            <article class="feature-card">
+              <p class="feature-label">Data Projects</p>
+              <h3>Analytics & ML</h3>
+              <p>Dashboards, predictions, and automation for real-world problems.</p>
+            </article>
+
+            <article class="feature-card">
+              <p class="feature-label">Branding</p>
+              <h3>Identity & Messaging</h3>
+              <p>Clear storytelling through layout, typography, and visual rhythm.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container section-header">
+        <span class="section-tag">Projects</span>
+        <h2>Selected work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A clean landing page built with HTML, CSS, and JavaScript.</p>
+          <span class="project-meta">Web</span>
+        </article>
+        <article class="project-card">
+          <h3>Data Dashboard</h3>
+          <p>Interactive dashboards for analytics and performance tracking.</p>
+          <span class="project-meta">Data</span>
+        </article>
+        <article class="project-card">
+          <h3>Creative Campaign</h3>
+          <p>Visual storytelling with a focus on layout and audience clarity.</p>
+          <span class="project-meta">Design</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div>
+          <span class="section-tag">About</span>
+          <h2>Hi, I’m a builder who loves clean digital experiences.</h2>
+          <p>I combine web design, data thinking, and polished presentation to create websites and projects that feel professional and easy to use.</p>
+        </div>
+        <div class="about-stats">
+          <div>
+            <strong>5+</strong>
+            <p>Projects completed</p>
+          </div>
+          <div>
+            <strong>3</strong>
+            <p>Tools mastered</p>
+          </div>
+          <div>
+            <strong>1</strong>
+            <p>Focused portfolio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-card">
+        <div>
+          <span class="section-tag">Contact</span>
+          <h2>Ready to start your next project?</h2>
+          <p>Send a quick message and I’ll get back to you soon.</p>
+        </div>
+        <a class="btn primary" href="mailto:hello@example.com">Email me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 MyPortfolio. Built with HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

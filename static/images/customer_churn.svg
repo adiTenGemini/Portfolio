@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0" stop-color="#fbcfe8" />
+      <stop offset="1" stop-color="#f472b6" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#071025" />
+  <rect x="40" y="40" rx="18" ry="18" width="1120" height="520" fill="url(#g3)" opacity="0.12" />
+  <g fill="#fff" font-family="Inter, sans-serif">
+    <text x="80" y="140" font-size="48" font-weight="700">Customer Churn</text>
+    <text x="80" y="200" font-size="20" opacity="0.85">Churn prediction and retention analytics</text>
+  </g>
+</svg>

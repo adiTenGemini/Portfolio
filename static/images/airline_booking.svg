@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="g5" x1="0" x2="1">
+      <stop offset="0" stop-color="#a7f3d0" />
+      <stop offset="1" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#02121a" />
+  <rect x="40" y="40" rx="18" ry="18" width="1120" height="520" fill="url(#g5)" opacity="0.12" />
+  <g fill="#fff" font-family="Inter, sans-serif">
+    <text x="80" y="140" font-size="48" font-weight="700">Airline Booking Predictor</text>
+    <text x="80" y="200" font-size="20" opacity="0.85">Forecasting booking status and demand</text>
+  </g>
+</svg>
