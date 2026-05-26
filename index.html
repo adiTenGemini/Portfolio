@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditya A Rajan — Portfolio</title>
+  <title>Aditya A Rajan | Portfolio</title>
   <link rel="stylesheet" href="static/styles.css" />
 </head>
 <body>
@@ -11,18 +11,16 @@
     <div class="container header-inner">
       <a class="brand" href="#home">Aditya A Rajan</a>
       <nav class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="toolbar-actions">
-        <a class="btn secondary github-btn" href="https://github.com/adiTenGemini" target="_blank" rel="noreferrer" aria-label="GitHub">
+        <a class="icon-link" href="https://github.com/adiTenGemini" target="_blank" rel="noreferrer" aria-label="GitHub">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.68 7.68 0 018 4.8c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
           </svg>
         </a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
           <span></span><span></span><span></span>
         </button>
@@ -32,95 +30,59 @@
 
   <main>
     <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">AI & Data Science</span>
-          <h1>Data Scientist — ML, NLP & Analytics</h1>
-          <p>I build machine learning tools, analytics dashboards, and polished data products.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn secondary" href="#contact">Contact</a>
-          </div>
-        </div>
-
-        <div class="hero-cards">
-          <article class="feature-card feature-card-large">
-            <p class="feature-label">Featured Work</p>
-            <h2>Data-driven products</h2>
-            <p>From model development to polished presentation, I build work that is easy to understand and fast to use.</p>
-          </article>
-
-          <div class="feature-row">
-            <article class="feature-card">
-              <p class="feature-label">Research & Modeling</p>
-              <h3>Applied AI</h3>
-              <p>Machine learning systems designed for practical decision support and insight generation.</p>
-            </article>
-
-            <article class="feature-card">
-              <p class="feature-label">Insight Delivery</p>
-              <h3>Analytics & Visualization</h3>
-              <p>Storytelling through data, with dashboards and analysis that help teams move faster.</p>
-            </article>
-          </div>
+      <div class="container hero-inner">
+        <span class="eyebrow">AI & Data Science</span>
+        <h1>Data Scientist - ML, NLP & Analytics</h1>
+        <p>I build machine learning tools, analytics dashboards, and polished data products.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact</a>
         </div>
       </div>
     </section>
 
-    <section class="section projects" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Projects</span>
-          <h2>Selected work</h2>
-        </div>
-
-        <div class="project-grid" id="projectGrid">
+    <section class="section" id="projects">
+      <div class="container section-header">
+        <span class="section-tag">Projects</span>
+        <h2>Selected work</h2>
+      </div>
+      <div class="container project-grid">
         <article class="project-card">
           <img class="project-image" src="static/images/player_recommendation.svg" alt="Player Recommendation">
           <h3><a href="https://github.com/adiTenGemini/Player-Recommendation-Application" target="_blank" rel="noreferrer">Player Recommendation Application</a></h3>
           <p>A recommender system built to suggest players based on performance and user preference.</p>
           <span class="project-meta">Machine Learning</span>
         </article>
-
-        <article class="project-card">
-          <img class="project-image" src="static/images/computation_lattice.svg" alt="Lattice Invariants">
-          <h3><a href="https://github.com/adiTenGemini/Application-for-Computation-of-Lattice-Invariants" target="_blank" rel="noreferrer">Application for Computation of Lattice Invariants</a></h3>
-          <p>A research-focused application for mathematical invariant computation.</p>
-          <span class="project-meta">Research</span>
-        </article>
-
         <article class="project-card">
           <img class="project-image" src="static/images/customer_churn.svg" alt="Customer Churn">
           <h3><a href="https://github.com/adiTenGemini/Customer-Churn-Prediction" target="_blank" rel="noreferrer">Customer Churn Prediction</a></h3>
           <p>A predictive model for identifying churn risk and improving retention strategies.</p>
           <span class="project-meta">Analytics</span>
         </article>
-
-        <article class="project-card">
-          <img class="project-image" src="static/images/airline_booking.svg" alt="Airline Booking">
-          <h3><a href="https://github.com/adiTenGemini/Airline-Booking-Status-Predictor" target="_blank" rel="noreferrer">Airline Booking Status Predictor</a></h3>
-          <p>A forecasting solution for booking status and flight demand.</p>
-          <span class="project-meta">Predictive Modeling</span>
-        </article>
-
         <article class="project-card">
           <img class="project-image" src="static/images/customer_reviews.svg" alt="Customer Reviews">
           <h3><a href="https://github.com/adiTenGemini/Customer-Reviews-Analysis" target="_blank" rel="noreferrer">Customer Reviews Analysis</a></h3>
           <p>NLP-driven sentiment analysis to extract product and service insights.</p>
           <span class="project-meta">NLP</span>
         </article>
-
         <article class="project-card">
           <img class="project-image" src="static/images/card_fraud.svg" alt="Card Fraud">
           <h3><a href="https://github.com/adiTenGemini/Card-Fraudulent-Detection" target="_blank" rel="noreferrer">Card Fraudulent Detection</a></h3>
           <p>An anomaly detection pipeline for spotting fraud in transaction data.</p>
           <span class="project-meta">Data Science</span>
         </article>
-      </div>
-
-      <!-- See more button is hidden when there are no hidden items -->
-      <div style="text-align:center; margin-top:1.25rem;">
-        <button id="seeMoreBtn" class="btn secondary" style="display:none;">See more</button>
+        <article class="project-card">
+          <img class="project-image" src="static/images/airline_booking.svg" alt="Airline Booking">
+          <h3><a href="https://github.com/adiTenGemini/Airline-Booking-Status-Predictor" target="_blank" rel="noreferrer">Airline Booking Status Predictor</a></h3>
+          <p>A forecasting solution for booking status and flight demand.</p>
+          <span class="project-meta">Predictive Modeling</span>
+        </article>
+        <article class="project-card">
+          <img class="project-image" src="static/images/computation_lattice.svg" alt="Lattice Invariants">
+          <h3><a href="https://github.com/adiTenGemini/Application-for-Computation-of-Lattice-Invariants" target="_blank" rel="noreferrer">Computation of Lattice Invariants</a></h3>
+          <p>A research-focused application for mathematical invariant computation.</p>
+          <span class="project-meta">Research</span>
+        </article>
       </div>
     </section>
 
@@ -128,10 +90,9 @@
       <div class="container about-grid">
         <div>
           <span class="section-tag">About</span>
-          <h2>Hi, I’m Aditya A Rajan.</h2>
+          <h2>Hi, I'm Aditya A Rajan.</h2>
           <p>Data scientist with an MSc in Data Science & AI (University of Liverpool). Experienced in ML, NLP, time-series forecasting, and building end-to-end analytics solutions.</p>
-          <p><strong>Data Science Trainee @ Digital Futures</strong><br>MSc Data Science & AI — University of Liverpool — Liverpool, UK</p>
-
+          <p><strong>Data Science Trainee @ Digital Futures</strong><br>MSc Data Science & AI - University of Liverpool - Liverpool, UK</p>
           <div class="skill-list">
             <span class="skill">Python</span>
             <span class="skill">Pandas</span>
@@ -166,11 +127,11 @@
       <div class="container contact-card">
         <div>
           <span class="section-tag">Contact</span>
-          <h2>Ready to work together?</h2>
-          <p>Connect with me on GitHub or LinkedIn, or send a quick email to start the conversation.</p>
+          <h2>Let's talk.</h2>
+          <p>Connect on LinkedIn or send a quick email.</p>
         </div>
         <div class="hero-actions">
-          <a class="btn primary" href="mailto:hello@example.com">Email me</a>
+          <a class="btn primary" href="mailto:hello@example.com">Email</a>
           <a class="btn secondary" href="https://www.linkedin.com/in/adityaarajan/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
@@ -179,7 +140,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Aditya A Rajan. Built with HTML, CSS & JavaScript.</p>
+      <p>&copy; 2026 Aditya A Rajan. Built with HTML, CSS & JavaScript.</p>
     </div>
   </footer>
 
