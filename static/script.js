@@ -35,18 +35,26 @@ navItems.forEach((item) => {
 // See more / See less toggle for projects
 const seeMoreBtn = document.getElementById('seeMoreBtn');
 if (seeMoreBtn) {
-  seeMoreBtn.addEventListener('click', () => {
-    const hiddenCards = document.querySelectorAll('.project-card.hidden');
-    const isHidden = hiddenCards.length > 0 && hiddenCards[0].style.display !== 'block';
-    if (isHidden) {
-      hiddenCards.forEach(c => c.style.display = 'block');
-      seeMoreBtn.textContent = 'See less';
-    } else {
-      hiddenCards.forEach((c, i) => { if (i >= 0) c.style.display = 'none'; });
-      seeMoreBtn.textContent = 'See more';
-      window.scrollTo({ top: document.getElementById('projects').offsetTop - 60, behavior: 'smooth' });
-    }
-  });
-  // initialize hidden cards as display:none
-  document.querySelectorAll('.project-card.hidden').forEach(c => c.style.display = 'none');
+  const hiddenCards = document.querySelectorAll('.project-card.hidden');
+  if (hiddenCards.length === 0) {
+    // nothing to show — hide the button
+    seeMoreBtn.style.display = 'none';
+  } else {
+    seeMoreBtn.style.display = 'inline-block';
+    // initialize hidden cards as display:none
+    hiddenCards.forEach(c => c.style.display = 'none');
+
+    seeMoreBtn.addEventListener('click', () => {
+      const stillHidden = document.querySelectorAll('.project-card.hidden');
+      const isHidden = stillHidden.length > 0 && stillHidden[0].style.display !== 'block';
+      if (isHidden) {
+        stillHidden.forEach(c => c.style.display = 'block');
+        seeMoreBtn.textContent = 'See less';
+      } else {
+        stillHidden.forEach((c, i) => { if (i >= 0) c.style.display = 'none'; });
+        seeMoreBtn.textContent = 'See more';
+        window.scrollTo({ top: document.getElementById('projects').offsetTop - 60, behavior: 'smooth' });
+      }
+    });
+  }
 }
